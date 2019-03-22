@@ -1,0 +1,25 @@
+version: "2"
+
+services:
+
+  node:
+    build: ./app/
+    volumes:
+      - ./app:/nodeapp
+    ports:
+      - "3000:3000"
+    links:
+      - mongo
+
+  mongo:
+    image: mongo
+    volumes_from:
+      - data
+    ports:
+      - "27017:27017"
+
+  data:
+    image: mongo
+    volumes:
+      - /data/db
+    command: "true"      

@@ -1,0 +1,19 @@
+{
+    "name": "xades",
+    "scripts": {
+        "prestart": "npm install",
+        "start": "node app.js"
+    },
+    "version": "0.0.1",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "express": "4.15.2",
+        "mongoose": "^5.4.19",
+        "socket.io": "2.2.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/clemenshemmerling/xade-server.git"
+    },
+    "license": "MIT"
+}
