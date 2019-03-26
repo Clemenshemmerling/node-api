@@ -6,10 +6,12 @@
     },
     "version": "0.0.1",
     "dependencies": {
+        "axios": "^0.18.0",
         "body-parser": "^1.18.3",
         "express": "4.15.2",
         "mongoose": "^5.4.19",
-        "socket.io": "2.2.0"
+        "socket.io": "2.2.0",
+        "xml-js": "^1.6.11"
     },
     "repository": {
         "type": "git",
