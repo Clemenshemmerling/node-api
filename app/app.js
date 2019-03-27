@@ -1,7 +1,6 @@
 const express = require('express'),
   fs = require('fs'),
-  app = express(),
-  webCrypto = requiere('WebCrypto '), 
+  app = express(), 
   server = require('http').createServer(app),
   io = require('socket.io').listen(server),
   port = process.env.PORT || 3000,
@@ -17,10 +16,6 @@ const express = require('express'),
     <usuario>47250763</usuario>
     <apikey>2CjGSRYDfrkXOcW2xQbOEVV</apikey>
   </SolicitaTokenRequest>`;
-
-  let file_buffered = fs.readFileSync('./key/llave.pfx');
-  const password_buffered = pvutils.stringToArrayBuffer('E/2019/Fcs');
-  const asn1 = asn1js.fromBER(file_buffered);
   
   mongoose.Promise = global.Promise;
   mongoose.connect('mongodb://mongo/Facturadb', {useNewUrlParser: true });

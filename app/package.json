@@ -2,7 +2,7 @@
     "name": "xades",
     "scripts": {
         "prestart": "npm install",
-        "start": "node app.js",
+        "start": "nodemon app.js",
         "live": "nodemon app.js"
     },
     "version": "0.0.1",
@@ -12,6 +12,7 @@
         "express": "4.15.2",
         "mongoose": "^5.4.19",
         "node-webcrypto-ossl": "^1.0.42",
+        "nodemon": "^1.18.10",
         "socket.io": "2.2.0",
         "xml-js": "^1.6.11"
     },
